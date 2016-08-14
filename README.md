@@ -8,13 +8,21 @@ There are three types of NAs in the data sets; "NA", "\#DIV/0!" and an empty spa
 Moreover, the first seven columns of the data sets are just information about users and time/dates, which are not important for the prediction of classe, therefore we do not need those.
 
 library(MASS)
+
 library(caret)
+
 library(rattle)
+
 library(foreach)
+
 library(rpart)
+
 library(randomForest)
+
 library(ppcor)
+
 trainData <- read.csv("pml-training.csv", header = T, na.strings = c("NA", "#DIV/0!", ""))[,-(1:7)]
+
 testData <- read.csv("pml-testing.csv", header = T, na.strings = c("NA", "#DIV/0!", ""))[,-(1:7)]
                    
 
