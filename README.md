@@ -1,3 +1,0 @@
-# Coursera
-nfsfns
-nsgnd f
